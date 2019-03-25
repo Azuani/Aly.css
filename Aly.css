@@ -1,0 +1,250 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#Portada{
+    width: 100%;
+    height: 30%;
+}
+#Logo{
+	position:absolute; 
+	top:405px; 
+	left:45px;
+	visibility:visible z-index:1
+}
+ul, ol{
+	list-style: none;
+}
+header{
+	width: 100%;
+}
+nav{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 4px;
+	background: Black;
+	border-bottom: 1px solid #555555;
+}
+
+.menu{
+	width: 55%;
+	display: table; /*TABAJA COMO TABLA*/
+	table-layout: fixed;/*TODOS LOS BOTONES DEL MISMO TAMAÑO*/
+	float: right;
+	transition: all .5s ease;
+}
+.menu li{
+	display: table-cell; /*Los elementos se van a comportar como una celda de table*/
+	overflow: hidden;
+	width: 100%; /*Cada boton tendra un espaciado exacto proporcional con los demas*/
+	border-right: 1px solid #5c5c5c;
+	border-left: 1px solid rgba(255, 255, 255, .2)
+}
+.menu li:first-child{
+	border-left: none;
+}
+.menu li:first-child:hover{
+	border-left: none;
+}
+.menu li a{
+	color: white;
+	display: block;
+	font-family: "Arial";
+	font-size: 18px;
+	padding: 10px 0px;
+	text-align: center;
+	text-decoration: none;
+}
+.menu li:hover{
+	background: purple;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-bottom: none;
+}
+.search_bar{
+	width: 30%;
+	float: right;
+	padding: 7px 0px;
+	box-sizing: border-box;
+	position: relative;
+}
+.search_bar input{
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+	border: none;
+	border-bottom: 1px solid #858585;
+	padding: 0px 10px 0px 25px;
+	box-sizing: border-box;
+	height: 25px;
+
+	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .7);
+	background: gray;
+}
+
+.search_bar input:focus{
+	background: white;
+	box-shadow: none;
+	transition: all .5s ease;
+}/*
+.icon-home{
+	display: block;
+	position: relative;
+	top: 2px;
+}
+.icon-search{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	color: black;
+	text-decoration: none;
+}*/
+
+
+
+/*********LISTA 2*********/
+#lista{
+	background-color: black;
+	margin-bottom: 1px solid black;
+	width:235px;
+	height: 300px;
+	text-align: left;
+}
+
+#productos li a{
+	color: white;
+	font-family: Copperplate Gothic Light;
+	font-size:17px;
+	text-decoration: none;
+}
+
+#productos li {    
+	height:60px;
+    width: 235px;
+    list-style: none;
+    font-style: normal;
+}
+
+/*EFECTO LISTA 1 HOVER*/
+#productos li:hover{
+    background-color: purple;
+    font-color: white;
+} 
+
+/*ESCONDE LA LISTA SI NO HAY HOVER*/
+#productos li ul{
+    display:none;
+    position:relative ;
+}
+
+/*MUESTRA LA LISTA SI PASO EL PUNTERO*/
+#productos li:hover >ul{
+    display: block;
+}
+
+/*LISTA 2*/
+#productos li ul li{
+    position: relative;
+    right: -235px;
+    top: -25px;
+    color:white;
+    background-color:black;	
+}
+
+
+.caja { 
+font-family: Segoe UI; 
+font-size: 13px; 
+font-weight: 400;
+height: 300px;
+width: 250px;
+color: black; 
+background:white;
+float: right;
+margin: 50px;
+border: solid 0.1em black;
+border-top-color: gray;
+}
+#ordenado{
+	float: right;
+	text-align: left;
+	border-right: 30px;
+}
+
+.spiner{
+	float: right;
+	text-align: right;
+	top: 600px;
+	border-left: 300px;
+	border-right: 400px;
+	width: 100%;
+}
+.MVendidas{
+	background: url(Doc1.html);
+}
+
+
+/*#imagen-cambiante {
+    min-height: 50px;
+    min-width: 30px;
+    background: url(JuegoPerlasTurquesa.jpg) no-repeat;(NO FUNCIONA???)
+}
+
+#imagen-cambiante:hover {
+	min-height: 50px;
+	min-width: 30px;
+    background: url(Portada1.jpg) no-repeat;
+}(NO FUNCIONA???)*/
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  height: 40px;
+  width: 170px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.pie1 { 
+font-family: Arial; 
+font-size: 13px; 
+font-weight: 400;
+height: 140px;
+width: 500px;
+margin: 1px;
+color: black; 
+background: white;
+float: left;
+border: solid 0.1em black;
+}
+
+.pie2 { 
+font-family: Arial; 
+font-size: 13px; 
+font-weight: 400;
+height: 140px;
+width: 300px;
+margin: 1px;
+color: black; 
+background: white;
+float: left;
+border: solid 0.1em black;
+}
+
+.pie3 { 
+font-family: Arial; 
+font-size: 13px; 
+font-weight: 400;
+height: 140px;
+width: 300px;
+margin: 1px;
+color: black; 
+background: white;
+float: left;
+border: solid 0.1em black;
+}
+
+
